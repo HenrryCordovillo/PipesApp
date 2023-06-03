@@ -34,6 +34,13 @@
             <li>fecha | date:'MMMM'</li>
             <li>fecha | date:'MMMM dd, yyyy'</li>
           </ol>
+          <hr />
+          <ol>
+            <li>fecha | date:'long':'GMT-6'</li>
+            <li>fecha | date:'long':'GMT-4'</li>
+            <li>fecha | date:'long':'':'es-EC'</li>
+            <li>fecha | date:'long':'':'fr-CA'</li>
+          </ol>
         </div>
       </ng-template>
       <ng-template pTemplate>
@@ -56,6 +63,13 @@
             <li>{{ today | date : "fullTime" }}</li>
             <li>{{ today | date : "MMMM" }}</li>
             <li>{{ today | date : "MMMM dd, yyyy" }}</li>
+          </ol>
+          <hr />
+          <ol>
+            <li>{{ today | date : "long" : "GMT-6" }}</li>
+            <li>{{ today | date : "long" : "GMT-4" }}</li>
+            <li>{{ today | date : "long" : "" : "es-EC" }}</li>
+            <li>{{ today | date : "long" : "" : "fr-CA" }}</li>
           </ol>
         </div>
       </ng-template>

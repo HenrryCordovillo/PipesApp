@@ -1,0 +1,64 @@
+<p-panel header="Pipes Basicos" styleClass="m-4">
+  <p>Pipes incluidos en Angular - Usualmente en el Common Module</p>
+</p-panel>
+<div class="grid m-3">
+  <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4">
+    <p-card header="uppercase">{{ nameLower | uppercase }}</p-card>
+  </div>
+  <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4">
+    <p-card header="lowercase">{{ nameUpper | lowercase }}</p-card>
+  </div>
+  <div class="col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4">
+    <p-card header="titlecase">{{ fullName | titlecase }}</p-card>
+  </div>
+  <div class="col-12 sm:col-12 md:col-12 lg:col-12 xl:col-12">
+    <p-splitter>
+      <ng-template pTemplate>
+        <div class="m-4">
+          <h1>Pipe Date</h1>
+          <ol>
+            <li>fecha</li>
+            <li>fecha | date</li>
+            <li>fecha | date:'short'</li>
+            <li>fecha | date:'medium'</li>
+            <li>fecha | date:'long'</li>
+            <li>fecha | date:'full'</li>
+            <li>fecha | date:'shortDate'</li>
+            <li>fecha | date:'mediumDate'</li>
+            <li>fecha | date:'longDate'</li>
+            <li>fecha | date:'fullDate'</li>
+            <li>fecha | date:'shortTime'</li>
+            <li>fecha | date:'mediumTime'</li>
+            <li>fecha | date:'longTime'</li>
+            <li>fecha | date:'fullTime'</li>
+            <li>fecha | date:'MMMM'</li>
+            <li>fecha | date:'MMMM dd, yyyy'</li>
+          </ol>
+        </div>
+      </ng-template>
+      <ng-template pTemplate>
+        <div class="m-4">
+          <h1>Pipe Date</h1>
+          <ol>
+            <li>{{ today }}</li>
+            <li>{{ today | date }}</li>
+            <li>{{ today | date : "short" }}</li>
+            <li>{{ today | date : "medium" }}</li>
+            <li>{{ today | date : "long" }}</li>
+            <li>{{ today | date : "full" }}</li>
+            <li>{{ today | date : "shortDate" }}</li>
+            <li>{{ today | date : "mediumDate" }}</li>
+            <li>{{ today | date : "longDate" }}</li>
+            <li>{{ today | date : "fullDate" }}</li>
+            <li>{{ today | date : "shortTime" }}</li>
+            <li>{{ today | date : "mediumTime" }}</li>
+            <li>{{ today | date : "longTime" }}</li>
+            <li>{{ today | date : "fullTime" }}</li>
+            <li>{{ today | date : "MMMM" }}</li>
+            <li>{{ today | date : "MMMM dd, yyyy" }}</li>
+          </ol>
+        </div>
+      </ng-template>
+    </p-splitter>
+  </div>
+</div>
